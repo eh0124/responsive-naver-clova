@@ -596,6 +596,10 @@ main {
   }
 }
 
+.last-pc {
+  display: none;
+}
+
 // CLOUD
 .cloud {
   background-color: #f8fafc;
@@ -832,6 +836,7 @@ footer {
   }
 
   .last-pc {
+    display: block;
     width: 1200px;
     margin: 5rem auto;
 
