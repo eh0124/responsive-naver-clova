@@ -1,0 +1,362 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #333;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  position: relative;
+}
+body img {
+  width: 100px;
+}
+body button,
+body img {
+  cursor: pointer;
+}
+body h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+body h2 {
+  font-size: 3rem;
+}
+body h3 {
+  font-size: 2rem;
+  line-height: 1.8rem;
+}
+body h4 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+body h5 {
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+body h6 {
+  font-size: 1rem;
+  line-height: 0.8rem;
+}
+body span {
+  font-size: 1rem;
+}
+body header {
+  /*Styling logo*/
+  /*Styling Links*/
+  /*Styling Buttons*/
+  /*Styling Hamburger Icon*/
+  /*Stying for small screens*/
+  /*Animating Hamburger Icon on Click*/
+}
+body header nav {
+  height: 5rem;
+  width: 100vw;
+  background-color: #131418;
+  box-shadow: 0 3px 20px #131418;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+}
+body header .logo {
+  padding: 1vh 1vw;
+  text-align: center;
+}
+body header .logo img {
+  width: 100px;
+  margin: 1rem;
+}
+body header .nav-links {
+  display: flex;
+  list-style: none;
+  width: 88vw;
+  padding: 0 0.7vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+body header .nav-links li a {
+  text-decoration: none;
+  margin: 0 0.7vw;
+  color: #fff;
+}
+body header .nav-links li a:hover {
+  color: #05d686;
+}
+body header .nav-links li {
+  position: relative;
+}
+body header .nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #05d686;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+}
+body header .nav-links li a:hover::before {
+  width: 80%;
+}
+body header .login-button {
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  margin-left: 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+body header .login-button:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  transition: all ease-in-out 350ms;
+}
+body header .join-button {
+  color: #131418;
+  background-color: #05d686;
+  border: 1.5px solid #05d686;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+body header .join-button:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  transition: all ease-in-out 350ms;
+}
+body header .hamburger div {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+body header .hamburger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  body header nav {
+    position: fixed;
+    z-index: 100;
+  }
+  body header .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 1rem;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+  body header .nav-links {
+    position: fixed;
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  body header .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  body header .nav-links li {
+    opacity: 0;
+  }
+  body header .nav-links li a, body header .nav-links li button {
+    color: #fff;
+  }
+  body header .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  body header .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  body header .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  body header .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.7s;
+  }
+  body header .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+  body header .nav-links li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+  body header .nav-links li:nth-child(7) {
+    transition: all 0.5s ease 1s;
+    margin: 0;
+  }
+  body header li.fade {
+    opacity: 1;
+  }
+}
+body header .toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+body header .toggle .line2 {
+  transition: all 0.7s ease;
+  width: 0;
+}
+body header .toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+body main {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 4.5rem;
+}
+body main .slick-track {
+  height: 500px;
+  position: relative;
+}
+body main .slick-track .v-txt-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .slick-track .v-txt-box h2 {
+  width: 300px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+body main .slick-track .v-txt-box h6 {
+  display: none;
+  color: #fff;
+}
+body main .slick-track .v-txt-box .btn-box {
+  width: 280px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+body main .slick-track .v-txt-box .btn-box .btn-primary {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.8s;
+}
+body main .slick-track .v-txt-box .btn-box .btn-primary:hover {
+  background-color: #05d686;
+  border: 1px solid #05d686;
+}
+body main .visual .v-slide01 {
+  height: 500px;
+  background: url(https://static-clova.pstatic.net/static/ad03a2a/img/main/main_lamp.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+body main .visual .v-slide03 {
+  height: 500px;
+  background: url(https://static-clova.pstatic.net/static/ad03a2a/img/main/main_clock_plus.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+body main .visual .slick-prev.slick-arrow,
+body main .visual .slick-next.slick-arrow {
+  width: 65px;
+  height: 65px;
+  border: 0px;
+  background: none;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translate(0, -50%);
+  font-size: 0rem;
+  color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body main .visual .slick-next.slick-arrow {
+  left: 85%;
+}
+body main .visual .slick-prev.slick-arrow:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.5rem 0.8rem;
+  text-decoration-line: none;
+  transition: 0.8s;
+}
+body main .visual .slick-next.slick-arrow:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.5rem 0.8rem;
+  text-decoration-line: none;
+  transition: 0.8s;
+}
+body main .visual .slick-dots {
+  width: 200px;
+  height: 100%;
+  padding-top: 10rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+body main .visual #slick-slide-control00,
+body main .visual #slick-slide-control01,
+body main .visual #slick-slide-control02,
+body main .visual #slick-slide-control03,
+body main .visual #slick-slide-control04 {
+  width: 30px;
+  height: 5px;
+  font-size: 0rem;
+  background: #fff;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+body main .visual #slick-slide-control00:hover,
+body main .visual #slick-slide-control01:hover,
+body main .visual #slick-slide-control02:hover,
+body main .visual #slick-slide-control03:hover,
+body main .visual #slick-slide-control04:hover {
+  border: 1px solid #ccc;
+  background: #ccc;
+}
+
+
+
+/*# sourceMappingURL=/main.39afc03c.297f0da0.css.map */
