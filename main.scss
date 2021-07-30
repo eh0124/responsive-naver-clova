@@ -398,6 +398,11 @@ main {
       background-position: center center;
     }
 
+    .btn-box {
+      margin: 0rem;
+    }
+
+
     .slick-prev.slick-arrow,
     .slick-next.slick-arrow {
       width: 65px;
@@ -748,6 +753,10 @@ footer {
       .v-slide03,
       .v-slide04 {
         height: 500px;
+      }
+
+      .btn-box {
+        margin: 7rem;
       }
 
       .slick-prev.slick-arrow,

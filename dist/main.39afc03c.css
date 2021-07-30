@@ -3,7 +3,8 @@
 * {
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   color: #333;
@@ -53,6 +54,7 @@ body .btn-primary {
   border: 1px solid #fff;
   border-radius: 20px;
   color: #fff;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 body .btn-primary:hover {
@@ -64,6 +66,7 @@ body .btn-black {
   background-color: transparent;
   border: 1px solid #333;
   border-radius: 20px;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 body .btn-black:hover {
@@ -77,6 +80,7 @@ body .btn-primary-wh {
   border: 1px solid #fff;
   border-radius: 20px;
   color: #fff;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 body .btn-primary-wh:hover {
@@ -88,8 +92,13 @@ body .btn-arrow {
   width: 120px;
   color: #bbb;
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
   cursor: pointer;
 }
@@ -97,6 +106,7 @@ body .btn-arrow i {
   color: #bbb;
   font-size: 1.5rem;
   margin-left: 0.3rem;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 body .btn-arrow:hover i {
@@ -108,7 +118,10 @@ header nav {
   height: 5rem;
   width: 100vw;
   background-color: #131418;
-  box-shadow: 0 3px 20px #131418;
+  -webkit-box-shadow: 0 3px 20px #131418;
+          box-shadow: 0 3px 20px #131418;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   z-index: 10;
@@ -122,12 +135,18 @@ header .logo img {
   margin: 1rem;
 }
 header .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   width: 88vw;
   padding: 0 0.7vw;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
 }
 header .nav-links li a {
@@ -149,6 +168,7 @@ header .nav-links li a::before {
   background-color: #05d686;
   position: absolute;
   top: -1rem;
+  -webkit-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
   margin: 0 0 0 10%;
 }
@@ -169,6 +189,7 @@ header .login-button:hover {
   color: rgba(0, 0, 0, 0.8);
   background-color: #fff;
   border: 1.5px solid #fff;
+  -webkit-transition: all ease-in-out 350ms;
   transition: all ease-in-out 350ms;
 }
 header .join-button {
@@ -184,6 +205,7 @@ header .join-button:hover {
   color: #fff;
   background-color: transparent;
   border: 1.5px solid #fff;
+  -webkit-transition: all ease-in-out 350ms;
   transition: all ease-in-out 350ms;
 }
 header .hamburger div {
@@ -191,6 +213,7 @@ header .hamburger div {
   height: 3px;
   background: #fff;
   margin: 5px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 header .hamburger {
@@ -207,8 +230,10 @@ header .hamburger {
     cursor: pointer;
     right: 1rem;
     top: 50%;
-    transform: translate(-5%, -50%);
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
     z-index: 2;
+    -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
   }
   header .nav-links {
@@ -216,9 +241,13 @@ header .hamburger {
     background: #000;
     height: 100vh;
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
+    -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
     pointer-events: none;
   }
@@ -235,25 +264,32 @@ header .nav-links li button {
     color: #fff;
   }
   header .nav-links li:nth-child(1) {
+    -webkit-transition: all 0.5s ease 0.2s;
     transition: all 0.5s ease 0.2s;
   }
   header .nav-links li:nth-child(2) {
+    -webkit-transition: all 0.5s ease 0.4s;
     transition: all 0.5s ease 0.4s;
   }
   header .nav-links li:nth-child(3) {
+    -webkit-transition: all 0.5s ease 0.6s;
     transition: all 0.5s ease 0.6s;
   }
   header .nav-links li:nth-child(4) {
+    -webkit-transition: all 0.5s ease 0.7s;
     transition: all 0.5s ease 0.7s;
   }
   header .nav-links li:nth-child(5) {
+    -webkit-transition: all 0.5s ease 0.8s;
     transition: all 0.5s ease 0.8s;
   }
   header .nav-links li:nth-child(6) {
+    -webkit-transition: all 0.5s ease 0.9s;
     transition: all 0.5s ease 0.9s;
     margin: 0;
   }
   header .nav-links li:nth-child(7) {
+    -webkit-transition: all 0.5s ease 1s;
     transition: all 0.5s ease 1s;
     margin: 0;
   }
@@ -262,14 +298,17 @@ header .nav-links li button {
   }
 }
 header .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
 }
 header .toggle .line2 {
+  -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   width: 0;
 }
 header .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 main {
@@ -286,7 +325,8 @@ main .slick-track .v-txt-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 main .slick-track .v-txt-box h2 {
   width: 300px;
@@ -302,9 +342,15 @@ main .slick-track .v-txt-box h6 {
 main .slick-track .v-txt-box .btn-box {
   width: 280px;
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
 }
 main .slick-track .v-txt-box .btn-box .btn-primary {
@@ -313,6 +359,7 @@ main .slick-track .v-txt-box .btn-box .btn-primary {
   border: 1px solid #fff;
   border-radius: 20px;
   color: #fff;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 main .slick-track .v-txt-box .btn-box .btn-primary:hover {
@@ -331,6 +378,9 @@ main .visual .v-slide03 {
   background-size: cover;
   background-position: center center;
 }
+main .visual .btn-box {
+  margin: 0rem;
+}
 main .visual .slick-prev.slick-arrow,
 main .visual .slick-next.slick-arrow {
   width: 65px;
@@ -341,10 +391,12 @@ main .visual .slick-next.slick-arrow {
   position: absolute;
   top: 50%;
   left: 1rem;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   font-size: 0rem;
   color: transparent;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 main .visual .slick-next.slick-arrow {
@@ -360,7 +412,9 @@ main .visual .slick-prev.slick-arrow:before {
   border-radius: 50%;
   font-size: 2rem;
   padding: 0.5rem 0.8rem;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 main .visual .slick-next.slick-arrow:before {
@@ -373,7 +427,9 @@ main .visual .slick-next.slick-arrow:before {
   border-radius: 50%;
   font-size: 2rem;
   padding: 0.5rem 0.8rem;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 main .visual .slick-dots {
@@ -383,9 +439,14 @@ main .visual .slick-dots {
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .visual #slick-slide-control00,
 main .visual #slick-slide-control01,
@@ -397,6 +458,7 @@ main .visual #slick-slide-control04 {
   font-size: 0rem;
   background: #fff;
   border: 1px solid #fff;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -418,9 +480,15 @@ main .visual #slick-slide-control04:hover {
 .special .special-right {
   width: 300px;
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .special .special-right > * {
   background-color: #f8fafc;
@@ -446,11 +514,22 @@ main .visual #slick-slide-control04:hover {
 }
 .last-mo .last-slider .slick-slide {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .last-mo .last-slider .slick-slide img {
   margin-bottom: 5rem;
@@ -467,7 +546,8 @@ main .visual #slick-slide-control04:hover {
   position: absolute;
   top: 50%;
   left: 1rem;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   font-size: 0rem;
   color: transparent;
 }
@@ -478,9 +558,14 @@ main .visual #slick-slide-control04:hover {
   position: absolute;
   top: 15%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .last-mo #slick-slide-control10,
 .last-mo #slick-slide-control11,
@@ -491,6 +576,7 @@ main .visual #slick-slide-control04:hover {
   background: #666;
   border: 1px solid #666;
   border-radius: 50px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -541,12 +627,19 @@ footer > :nth-child(1) nav {
 }
 footer > :nth-child(1) nav ul {
   width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer > :nth-child(1) nav ul a {
   color: #666;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 footer > :nth-child(1) nav ul a:hover {
@@ -558,6 +651,8 @@ footer > :nth-child(1) .bk {
 }
 footer > :nth-child(1) > :nth-child(2) {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 footer #language,
@@ -590,6 +685,7 @@ footer .sns i {
   padding: 0.5rem 0.5rem 0;
   color: #666;
   cursor: pointer;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 footer .sns i:hover {
@@ -622,6 +718,9 @@ main .visual .v-slide03,
 main .visual .v-slide04 {
     height: 500px;
   }
+  main .visual .btn-box {
+    margin: 7rem;
+  }
   main .visual .slick-prev.slick-arrow,
 main .visual .slick-next.slick-arrow {
     width: 65px;
@@ -632,10 +731,12 @@ main .visual .slick-next.slick-arrow {
     position: absolute;
     top: 50%;
     left: 1rem;
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     font-size: 0rem;
     color: transparent;
     cursor: pointer;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   main .visual .slick-next.slick-arrow {
@@ -651,7 +752,9 @@ main .visual .slick-next.slick-arrow {
     border-radius: 50%;
     font-size: 2rem;
     padding: 0.5rem 0.8rem;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    -webkit-transition: 0.8s;
     transition: 0.8s;
   }
   main .visual .slick-next.slick-arrow:before {
@@ -664,7 +767,9 @@ main .visual .slick-next.slick-arrow {
     border-radius: 50%;
     font-size: 2rem;
     padding: 0.5rem 0.8rem;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    -webkit-transition: 0.8s;
     transition: 0.8s;
   }
 
@@ -672,9 +777,15 @@ main .visual .slick-next.slick-arrow {
     width: 1200px;
     margin: 0 auto;
     padding: 42rem 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .special .special-left {
     width: 400px;
@@ -711,17 +822,30 @@ main .visual .slick-next.slick-arrow {
   }
   .last-pc .last-right {
     width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .last-pc .last-right > * {
     width: 350px;
     text-align: center;
     padding-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .last-pc .last-right > * img {
     width: 350px;
@@ -761,6 +885,8 @@ main .visual .slick-next.slick-arrow {
     margin: 5rem auto;
   }
   footer > :nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   footer > :nth-child(1) nav {
@@ -770,15 +896,23 @@ main .visual .slick-next.slick-arrow {
   }
   footer > :nth-child(1) nav ul {
     width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer > :nth-child(1) nav ul a {
     color: #333;
     font-weight: 600;
   }
   footer > :nth-child(1) > :nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   footer > :nth-child(2) {
