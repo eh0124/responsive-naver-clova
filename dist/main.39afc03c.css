@@ -501,6 +501,10 @@ main .visual #slick-slide-control04:hover {
   background: #05d686;
 }
 
+.last-pc {
+  display: none;
+}
+
 .cloud {
   background-color: #f8fafc;
   text-align: center;
@@ -692,6 +696,7 @@ main .visual .slick-next.slick-arrow {
   }
 
   .last-pc {
+    display: block;
     width: 1200px;
     margin: 5rem auto;
   }
